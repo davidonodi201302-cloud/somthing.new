@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: "Courier New", monospace;
+}
+
+.message {
+    color: #39ff79;
+    font-size: clamp(20px, 5vw, 42px);
+    letter-spacing: 8px;
+    text-align: center;
+    text-shadow:
+        0 0 5px #39ff79,
+        0 0 15px #00ff55,
+        0 0 35px #008f35;
+    animation: reveal 3s ease forwards;
+    padding: 20px;
+}
+
+@keyframes reveal {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="message">
+    ▽◇▽♢ · ◇ · ◇ ♧ / ♧♧ ◇♢♧◇♧♧
+</div>
+
+</body>
+</html>
